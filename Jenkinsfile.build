@@ -1,7 +1,7 @@
 pipeline{
   agent any
   stages{
-    stage("build_1"){
+    stage("build_23"){
       steps{
         sh 'docker build . -t iorp/django_demo:${GIT_COMMIT} -t iorp/django_demo:latest'
       }
