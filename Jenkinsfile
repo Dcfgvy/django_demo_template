@@ -4,7 +4,7 @@ pipeline {
         IMAGE_NAME = "iorp/django_demo"
     }
     stages {
-        stage("test1") {
+        stage("test") {
             steps {
                 build job: '/lib/django-test-parametrized',
                     parameters: [
